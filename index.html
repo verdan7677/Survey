@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Kavoon&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- This is the title -->
+    <div id="main-title">
+        <div> Survey</div>
+    </div>
+
+    <!-- This is the form div-->
+    <div id="form">
+        <!-- These are the form elements -->
+
+        <!-- Name -->
+        <div id="name" class="element">
+            <h3 id="name-title">Name</h3>
+            <input type="text" id="name-field" class="field" placeholder="Ex : John Max" value="">
+        </div>
+
+        <!-- email -->
+        <div id="email" class="element">
+            <h3 id="eamil-title">Eamil</h3>
+            <input type="email" id="email-field" class="field" placeholder="Ex : john89@gmail.com">
+        </div>
+
+        <!-- gender -->
+        <div id="gender" class="element">
+            <h3 id="gender-title">Gender</h3>
+            <div id="gender-field">
+                <input type="Radio" id="male" name="radio-option" checked="checked" class="radio">
+                <label for="male" class="radio-label">Male</label>
+
+                <input type="Radio" id="female" name="radio-option" class="radio">
+                <label for="female" class="radio-label">Female</label>
+
+                <input type="Radio" id="other" name="radio-option" class="radio">
+                <label for="other" class="radio-label">Other</label>
+
+
+            </div>
+        </div>
+
+        <!-- Message -->
+        <div id="message" class="element">
+            <h3 id="meassage-title">What would you like to say?</h3>
+            <!-- <input type="text" id="message-field" placeholder="Anything" value="" class="field"> -->
+            <textarea id="message-field" cols="30" rows="10" placeholder="Anything" class="field"></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <div id="submit-div">
+            <button name="submit-btn" id="submit" onclick="Set()">
+                Submit
+            </button>
+        </div>
+
+        <!-- javascript file -->
+        <script src="script.js"></script>
+    </div>
+    </div>
+</body>
+
+</html>

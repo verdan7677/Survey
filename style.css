@@ -1,0 +1,129 @@
+:root{
+    --mild-gray : rgb(0, 0, 0, 0.9);
+}
+
+body{
+    background: var(--mild-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#form{
+    font-family: 'Buda', cursive;
+}
+
+#main-title{
+    font-family: 'Kavoon', cursive;
+    font-size: xx-large;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(235, 60, 39);
+}
+
+#form{
+    color: teal;
+    width: 50%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    border-style: solid;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 50px;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+.element{
+    padding: 20px;
+}
+
+#message-field{
+    height: 70%;
+    width: 70%;
+    font-family: 'Buda', cursive;
+    box-shadow: none;
+}
+
+.field:hover{
+    transition: 0.4s;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    height: 35px;
+    width: 55%;
+}
+
+.field{
+    background: var(--mild-gray);
+    border: none;
+    color: white;
+    width: 50%;
+    height: 30px;
+
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.field:not(hover){
+    transition: 0.4s;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.9);
+}
+
+#message-field:hover{
+    transition: 0.4s;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    height: 72%;
+    width: 72%;
+}
+
+#submit{
+    margin-left: 40%;
+    background: var(--mild-gray);
+    color: white;
+    border: none;
+    height: 50px;
+    width: 70px;
+
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+
+}
+
+#submit:hover{
+    transition: 0.4s;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    height: 55px;
+    width: 75px;
+}
+
+#submit:not(hover){
+    transition: 0.4s;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+    height: 50px;
+    width: 70px;
+}
+
+input[type="radio"]{
+    opacity: 0;
+    position: fixed;
+    width: 0px;
+    height: 0px;
+}
+
+#gender-field label{
+    display: inline-block;
+    padding: 0px 20px;
+    margin: 0px 5px;
+    font-size: 16px;
+    border: 3px solid --mild-gray;
+    border-radius: 4px;
+}
+
+#gender-field input[type="radio"]:checked + label{
+    transition: 0.4s;
+    color: white;
+}
