@@ -49,9 +49,7 @@ function Set() {
         alert("Invaild Email!")
         return
     }
-    //  TODO: check if eamil exists
-
-    // Working with json
 
 
+    alert("Your info is: " + "\n\n" + "Name: " + name + "\n" + "Email: " + email + "\n" + "Gender: " + gender + "\n" + "Your message: " + message)
 }
